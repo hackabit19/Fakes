@@ -1,12 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>upload</title>
+
+    <link rel="apple-touch-icon" href="logo192.png" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <link href="{{url_for('static',filename='css/index.css') }}" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-    
+    <div class="ui grid container">
+        <div class="eight wide column">
+            <div class="head_items">
+                Try First
+                <div class="sub_heading">
+                    A virtual space for you to try out that dress you like.
+                </div>
+                <a href="{{url_for('upload')}}">
+                    <div class="ui button" tabindex="0">
+                            <div class="visible content">Get Started</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="eight wide column">
+            <div class="main_image">
+                <img src="{{url_for('static',filename='images/1.jpg') }}" style="width: 600px;height: 600px;" />
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
