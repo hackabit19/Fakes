@@ -10,13 +10,21 @@
 ## Introduction :-
 TryFirst is an interactive web-app which benefits users by allowing them to try-on a particular cloth to see how it suits them.
 Thus, allowing consumers to virtually try on clothes will not only enhance their shopping experience, transforming the way
-people shop for clothes, but also save cost for retailer.
+people shop for clothes, but also save cost for retailer. 
    
 ## Details
 Frameworks Used :-</b>
 * pytorch 1.3.0
 * flask 
 * matplotlib
+* OpenPose
+* Ranger Optimizer(current state of the art optimizer)
+
+Dataset Used :-</b>
+* MPV Dataset (contains person,cloth,cloth_mask,person_mask and poses)
+Here is the link to the dataset [here](https://drive.google.com/open?id=1GiD74PMMykGAm3lwENpebewOYM1sgcNq)
+
+Trained model is available [here](https://drive.google.com/open?id=1K1ZN4cNGzVHzQbC1Wz8_i-eivQhOFa3e)
 
 ## Implemenetation_details
 * Used Generative Adversarial Networks with Adversarial loss, perceptual loss and L1 loss for smoothening.
