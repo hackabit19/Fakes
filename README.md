@@ -27,9 +27,23 @@ Here is the link to the dataset [here](https://drive.google.com/open?id=1GiD74PM
 Trained model is available [here](https://drive.google.com/open?id=1K1ZN4cNGzVHzQbC1Wz8_i-eivQhOFa3e)
 
 ## Implemenetation_details
+* Pose Generation using openpose.
+* Parser are generated using SS-nan (opensource pre-trained model) . 
 * Used Generative Adversarial Networks with Adversarial loss, perceptual loss and L1 loss for smoothening.
 * Used U-Net for generator and a downsampler for discriminator.
-* Final loss of generator on validation : 
-* Final loss of discriminator on validation :
-* Epochs Trained :
+
+## Training process
+* The pose generated and parser and person image are concatenated along with and cloth imgae are fedded to GMM.
+* output of above is a warped cloth.
+* Now that concatenated image along with warped cloth is feeded to Gans.
+* Final output is image of person wearing desired cloth.
+* Final loss of generator on validation : 3.62001
+* Final loss of discriminator on validation :0.003821
+* Epochs Trained : 50
 * Optimizer : Ranger
+
+
+## Resources
+Openpose - [here] https://github.com/CMU-Perceptual-Computing-Lab/openpose
+Parser  - [here] https://github.com/PeikeLi/Self-Correction-Human-Parsing
+viton - [here] https://arxiv.org/abs/1711.08447
