@@ -1,0 +1,9 @@
+body{
+    background-color:black;
+    background-image:url("/home/pr7/Desktop/FlaskTryFirst/static/images/photo-1528818955841-a7f1425131b5.jpeg");
+}
+.sub_heading{
+    font-size: 30px;
+    color: #000000;
+    font-family: "Candara";
+}

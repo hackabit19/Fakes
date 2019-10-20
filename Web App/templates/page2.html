@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Upload</title>
+
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <link href="{{url_for('static',filename='css/page2.css') }}" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+       function goPython(){
+           $.ajax({
+             path: "/ml/python/pyscript.py",
+            context: document.body
+           }).done(function() {
+            alert('Finished ML Script');;
+           });
+       }
+   </script>
+
+</head>
+<style>
+    body {
+      background-image: url("{{url_for('static',filename='images/PAGE2.jpg')}}");
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    }
+    </style>
+    
+<body>  
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">GIVE US A PICTURE OF YOU</h1>
+    
+   
+    <div class content>
+        <div class="ui grid container">
+            
+            <br>
+          <form class="ui form" action = "/Choose_Template" method = "post" enctype="multipart/form-data">
+                              <input class="ui button" type="file" name="file" />
+                              <input class="ui button" type = "submit" value="Upload" >
+            </form>
+                
+            
+
+        </div>
+    </div>
+
+  </div>
+</body>
+</html>

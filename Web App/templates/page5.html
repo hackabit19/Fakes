@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>upload</title>
+
+    <link rel="apple-touch-icon" href="logo192.png" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <link href="{{url_for('static',filename='css/page4.css') }}" rel="stylesheet" type="text/css">
+    <script>
+            function hello(){
+                 alert('Finished ML Script');;
+            }
+    </script>
+
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        body {
+         background-color: khaki;
+        }
+        </style>
+<body>
+    <h1 style="text-align: center;size: 150px;">PICK SOMETHING YOU LIKE.</h1>
+    
+    <div class="row">
+        <div class="column">
+                <a href="{{url_for('view1')}}">
+          <img src="{{url_for('static',filename='images/img1.png') }}" alt="Snow" style="width:100%">
+          </a>
+        </div>
+        <div class="column">
+          <img src="{{url_for('static',filename='images/img1.png') }}" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="{{url_for('static',filename='images/img1.png') }}" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+
+
+</body>
+</html>

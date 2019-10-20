@@ -1,0 +1,27 @@
+body{
+    background-image: url("{{url_for('static',filename='images/PAGE2.jpg')}}");
+}
+.head_items{
+    font-size: 80px;
+    color:black;
+    font-family: "Time Burner";
+    text-align: center;
+    padding: 20px;
+    padding-top: 100px;
+    padding-left: 70px;
+}
+.sub_heading{
+    font-size: 30px;
+    color: black;
+    font-family: "Candara";
+    text-align: right;
+}
+.upload_form2{
+    text-align: center;
+    margin: 0 auto;
+     width: 100px; 
+}
+.upload_form1{
+    text-align: center;
+    
+}
