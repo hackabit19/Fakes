@@ -44,6 +44,6 @@ Trained model is available [here](https://drive.google.com/open?id=1K1ZN4cNGzVHz
 
 
 ## Resources
-Openpose - [here] https://github.com/CMU-Perceptual-Computing-Lab/openpose
-Parser  - [here] https://github.com/PeikeLi/Self-Correction-Human-Parsing
-viton - [here] https://arxiv.org/abs/1711.08447
+* Openpose - [here] https://github.com/CMU-Perceptual-Computing-Lab/openpose
+* Parser  - [here] https://github.com/PeikeLi/Self-Correction-Human-Parsing
+* viton - [here] https://arxiv.org/abs/1711.08447
